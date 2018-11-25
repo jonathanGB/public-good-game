@@ -1,0 +1,97 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  margin-top: 50px; 
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#bid {
+    visibility: hidden;
+}
+
+td, th {
+  padding: 15px;
+  text-align: center;
+}
+
+.your-username {
+ color: blue; 
+}
+
+#numPlayers {
+  font-weight: bold;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+tr.winner {
+  background-color: rgba(0, 255, 0, 0.5); 
+}
+
+tr.looser {
+  background-color: rgba(255, 0, 0, 0.5); 
+}
+
+form {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+#username {
+  font-size: 1.2em;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}

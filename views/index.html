@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="Public good game">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        CS 289: Public Good Game
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">Oh hi, your username is "<span id="username" class="your-username"></span>"</p>
+      (The username is randomly generated from an external library, sorry if it's weird).
+      
+      <br>
+      
+      <form id="bid">
+        <i>If you bid, your bid will be multiplied by a factor of <b id="factor"></b>, equally amongst all the players</i> <br>
+        <label>No bid: <input name="bid" value="no bid" type="radio" autocomplete="off"></label> <br>
+        <label>Bid: <input name="bid" value="bid" type="radio" autocomplete="off"></label> <br>
+      </form>
+      
+      <h3>
+        <span id="numPlayers"></span> players
+      </h3>
+      <table id="results">
+        <thead>
+          <tr><th>Player</th><th>Initial</th><th>Bid</th><th>Outcome</th></tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

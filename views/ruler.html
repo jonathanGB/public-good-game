@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-role="ruler">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="Public good game">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        CS 289: Public Good Game (Admin)
+      </h1>
+    </header>
+    
+    <form id="bid">
+      <i>If you bid, your bid will be multiplied by a factor of <b id="factor"></b>, equally amongst all the players</i>
+    </form>
+
+    <main>           
+      <form id="status">
+        <label>WAITING: <input name="status" value="WAITING" type="radio"></label> <br>
+        <label>CHOOSING: <input name="status" value="CHOOSING" type="radio"></label> <br>
+        <label>FINISHED: <input name="status" value="FINISHED" type="radio"></label> <br>
+      </form>
+      
+      <h3>
+        <span id="numPlayers"></span> players
+      </h3>
+      <table id="results">
+        <thead>
+          <tr><th>Player</th><th>Initial</th><th>Bid</th><th>Outcome</th></tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      
+      <div id="histogram">
+        
+      </div>
+    </main>
+  </body>
+</html>
